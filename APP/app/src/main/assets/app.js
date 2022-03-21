@@ -1,6 +1,6 @@
 var oldu=window.location.href;
-var ytdown_api_url="https://ytdl-ytpro.herokuapp.com/?url=";
-var ytdown_aud_api_url="https://ytdl-ytpro.herokuapp.com/aud/?url=";
+var ytdown_api_url="<YOUR_API_URL>?url=";
+var ytdown_aud_api_url="<YOUR_API_URL>/aud/?url=";
 function pkyt(){
 if(window.location.href.indexOf("youtube.com/watch") > -1){
 var jdjd=document.getElementById("wdymbyndown");
