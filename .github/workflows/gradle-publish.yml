@@ -20,7 +20,7 @@ jobs:
         distribution: 'adopt'
         
     - name: Build
-      run: cmd.exe /c "./APP/gradlew.bat" assembleRelease
+      run: cmd.exe /c "APP\gradlew.bat" assembleRelease
 
     - name: Upload
       uses: actions/upload-artifact@v1
