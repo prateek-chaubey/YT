@@ -1,7 +1,6 @@
 const fs = require('fs');
 const ytdl = require('ytdl-core');
 const express = require('express');
-
 const fetch = require('node-fetch');
 const app = express();
 app.set("view engine", "ejs");
@@ -21,7 +20,7 @@ app.get("/", (req, res) => {
 
   }
   else {
-    res.send("Bete tune to  Moj Kardi");
+    res.send("URL NOT FOUND");
   }
 });
 
@@ -44,18 +43,10 @@ app.get("/aud", (req, res) => {
 
   }
   else {
-    res.send("Bete tune to  Moj Kardi");
+    res.send("URL NOT FOUND");
   }
 });
 
-async function op() {
-
-  const response = await fetch('https://ytdl.reelsremix.repl.co/aud/?url=https://youtu.be/DuZvDgpgFHs');
-  const data = await response;
-  console.log(data)
-
-}
-//setInterval(op, 500);
 app.listen(5000, () => {
   console.log("App Running on Port 5000!");
 });
