@@ -64,7 +64,8 @@ public class MainActivity extends Activity {
 				_inject();
 				super.onPageFinished(_param1, _param2);
 			}
-		});
+		});
+
 		web.loadUrl("https://m.youtube.com/");
 		web.getSettings().setDomStorageEnabled(true); web.getSettings().setDatabaseEnabled(true);
 		web.addJavascriptInterface(new WebAppInterface(this), "Android");
@@ -91,10 +92,6 @@ public class MainActivity extends Activity {
 			        web.loadUrl("javascript:(function(){"+"setTimeout( () => {"+"document.getElementById('player-container-id').style.position='fixed';"+"document.getElementById('player-container-id').style.top='48px'; "+"document.getElementsByClassName('mobile-topbar-header')[0].style.display='flex'; "+"},50);})()");
 			    }
 	}
-	
-	
-	
-	
 	
 	
 	
@@ -250,5 +247,6 @@ public class MainActivity extends Activity {
 			        }
 		    
 	}
-}
+
+}
 	
