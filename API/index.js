@@ -34,7 +34,6 @@ app.get("/aud", (req, res) => {
 
       var k = ytdl.filterFormats(h.formats, 'audioonly');
 
-      // k=JSON.stringify(k).substr(0,JSON.stringify(k).length-1);
       var n = k[k.length - 1].url;
       var thu = h.videoDetails.thumbnails[h.videoDetails.thumbnails.length - 1].url;
       k = '{"url":"' + n + '","title":"' + h.videoDetails.title + '","thumb":"' + thu + '"}';
